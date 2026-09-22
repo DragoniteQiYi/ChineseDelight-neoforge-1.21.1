@@ -1,0 +1,13 @@
+{
+  "itemGroup.chinesedelight": "Example Mod Tab",
+  "block.chinesedelight.example_block": "Example Block",
+  "item.chinesedelight.example_item": "Example Item",
+
+  "chinesedelight.configuration.title": "Chinese Delight Configs",
+  "chinesedelight.configuration.section.chinesedelight.common.toml": "Chinese Delight Configs",
+  "chinesedelight.configuration.section.chinesedelight.common.toml.title": "Chinese Delight Configs",
+  "chinesedelight.configuration.items": "Item List",
+  "chinesedelight.configuration.logDirtBlock": "Log Dirt Block",
+  "chinesedelight.configuration.magicNumberIntroduction": "Magic Number Text",
+  "chinesedelight.configuration.magicNumber": "Magic Number"
+}
