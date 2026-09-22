@@ -1,0 +1,15 @@
+{
+  "itemGroup.chinesedelight": "中华乐事",
+  "block.chinesedelight.example_block": "Example Block",
+  "item.chinesedelight.example_item": "Example Item",
+
+  "chinesedelight.configuration.title": "中华乐事设置",
+  "chinesedelight.configuration.section.chinesedelight.common.toml": "中华乐事设置",
+  "chinesedelight.configuration.section.chinesedelight.common.toml.title": "中华乐事设置",
+  "chinesedelight.configuration.items": "物品",
+  "chinesedelight.configuration.logDirtBlock": "输出泥土方块",
+  "chinesedelight.configuration.magicNumberIntroduction": "魔法数字文本",
+  "chinesedelight.configuration.magicNumber": "魔法数字",
+
+  "item.chinesedelight.red_chili": "红辣椒"
+}
