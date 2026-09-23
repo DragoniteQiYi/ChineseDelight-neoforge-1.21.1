@@ -54,28 +54,7 @@ public class ChineseDelight {
     // Creates a new food item with the id "chinesedelight:example_id", nutrition 1 and saturation 2
     public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
-
-    // Creates a creative tab with the id "chinesedelight:example_tab" for the example item, that is placed after the combat tab
-//    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
-//            .title(Component.translatable("itemGroup.chinesedelight")) //The language key for the title of your CreativeModeTab
-//            .withTabsBefore(CreativeModeTabs.COMBAT)
-//            .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
-//            .displayItems((parameters, output) -> {
-//                output.accept(EXAMPLE_ITEM.get());// Add the example item to the tab. For your own tabs, this method is preferred over the event
-//            }).build());
-
-
-
-    public static final Supplier<CreativeModeTab> CHINESE_DELIGHT_TAB =
-            CREATIVE_MODE_TABS.register("chinesedelight_tab", () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(Items.BREAD))
-                    .withTabsBefore(CreativeModeTabs.COMBAT)
-                    .title(Component.translatable("itemGroup.chinesedelight"))
-                    .displayItems((params, output) -> {
-                        // 在这里添加你的物品
-                    })
-                    .build());
-
+    
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public ChineseDelight(IEventBus modEventBus, ModContainer modContainer) {
@@ -101,12 +80,19 @@ public class ChineseDelight {
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
         var addon = DelightAddon.create("chinesedelight", modEventBus);
-        addon.food("red_chili")
+        var redChili = addon.food("red_chili")
                 .nutrition(1)
                 .saturation(0.1f)
                 .fast()
                 .build();
 
+        CREATIVE_MODE_TABS.register("chinesedelight_tab", () -> CreativeModeTab.builder()
+                .icon(() -> new ItemStack(redChili.get()))
+                .title(Component.translatable("itemGroup.chinesedelight"))
+                .displayItems((params, output) -> {
+                    output.accept(redChili.get());
+                })
+                .build());
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
