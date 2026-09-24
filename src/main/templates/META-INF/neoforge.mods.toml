@@ -42,16 +42,16 @@ displayName="${mod_name}" #mandatory
 #credits="" #optional
 
 # The authors of the mod, displayed in the mod UI (optional)
-authors="DragoniteQiYi"
+authors="${mod_authors}"
 
 # The description text for the mod (multi line!) (#mandatory)
-description='''
-An addon mod for Farmer's Delight that adds basic Chinese cooking system and common ingredients in Chinese cuisine.
-'''
+description='''${mod_description}'''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
-[[mixins]]
-config="${mod_id}.mixins.json"
+# This mod ships no mixins, so the block is intentionally left disabled. If a mixin config is
+# added later, restore the block below and declare the config file in this directory.
+#[[mixins]]
+#config="${mod_id}.mixins.json"
 
 # The [[accessTransformers]] block allows you to declare where your AT file is.
 # If this block is omitted, a fallback attempt will be made to load an AT from META-INF/accesstransformer.cfg
@@ -91,13 +91,3 @@ config="${mod_id}.mixins.json"
 # stop your mod loading on the server for example.
 #[features.${mod_id}]
 #openGLVersion="[3.2,)"
-
-[[dependencies.${mod_id}]]
-modId="delightlib"
-type="required"
-versionRange="*"
-
-[[dependencies.${mod_id}]]
-modId="farmersdelight"
-type="required"
-versionRange="*"

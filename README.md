@@ -1,25 +1,45 @@
-
-Installation information
+Chinese Delight（五味俱全）
 =======
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+A Minecraft mod about Chinese cuisine for **NeoForge 1.21.1**.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+Adds Chinese-style ingredients, cookware and dishes: crops, a stone mill, an iron pot,
+a fermenting jar, an iron pan, a kitchen knife and a chef hat.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+## Requirements
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
+| | |
+|---|---|
+| Minecraft | 1.21.1 |
+| NeoForge | 21.1.251 |
+| Java | 21 |
+
+## Building
+
+```bash
+./gradlew build
+```
+
+The output jar is written to `build/libs/`.
+
+## Running in development
+
+```bash
+./gradlew runClient
+./gradlew runServer
+```
+
+If Gradle cannot find Java, set `JAVA_HOME` to a JDK 21 installation first.
+
+## Mapping names
+
+By default the MDK is configured to use the official mapping names from Mojang for methods
+and fields in the Minecraft codebase. These names are covered by a specific license. All
+modders should be aware of this license. For the latest license text, refer to the mapping
+file itself, or the reference copy here:
 https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
+## Additional resources
+
+Community documentation: https://docs.neoforged.net/
 NeoForged Discord: https://discord.neoforged.net/

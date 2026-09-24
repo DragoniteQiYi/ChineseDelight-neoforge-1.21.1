@@ -165,8 +165,13 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             mod_name               : mod_name,
             mod_license            : mod_license,
             mod_version            : mod_version,
+            mod_authors            : mod_authors,
+            mod_description        : mod_description,
     ]
     inputs.properties replaceProperties
+    // mod_description 里有中文，过滤时若不指定 UTF-8 会按平台默认编码读，
+    // 打包进 jar 的 neoforge.mods.toml 就会变成乱码。
+    filteringCharset = 'UTF-8'
     expand replaceProperties
     from "src/main/templates"
     into "build/generated/sources/modMetadata"
