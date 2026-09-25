@@ -1,3 +1,6 @@
 {
-  "parent": "chinesedelight:block/gingercrop"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chinesedelight:item/ginger"
+  }
 }

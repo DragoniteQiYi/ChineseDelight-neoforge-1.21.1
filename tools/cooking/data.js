@@ -693,6 +693,9 @@ const DISH_ITEMS = [
  */
 const EXTRA_ITEM_MODELS = [
     'red_chilli',
+    // 姜既是种子也是食材，物品模型必须用 item/generated 指向 ginger.png；
+    // 之前它错指向 block/gingercrop，导致物品显示成作物贴图/破面。
+    'ginger',
 ];
 
 module.exports = {
