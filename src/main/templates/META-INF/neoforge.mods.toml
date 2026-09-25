@@ -58,11 +58,8 @@ description='''${mod_description}'''
 #[[accessTransformers]]
 #file="META-INF/accesstransformer.cfg"
 
-# Dependencies are declared per modid. This is a table KEY, so it cannot use template
-# placeholder expansion (Groovy only substitutes values, not keys). Keep the modid literal
-# here, otherwise the IDE's TOML parser reports "expected <key segment>" on a file that
-# still builds correctly.
-[[dependencies.chinesedelight]] #optional
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.${mod_id}]] #optional
     # the modid of the dependency
     modId="neoforge" #mandatory
     # The type of the dependency. Can be one of "required", "optional", "incompatible" or "discouraged" (case insensitive).
@@ -81,7 +78,7 @@ description='''${mod_description}'''
     side="BOTH"
 
 # Here's another dependency
-[[dependencies.chinesedelight]]
+[[dependencies.${mod_id}]]
     modId="minecraft"
     type="required"
     # This version range declares a minimum of the current minecraft version up to but not including the next major version
