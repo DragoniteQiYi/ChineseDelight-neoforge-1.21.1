@@ -14,10 +14,7 @@
   },
   "must_have": [
     {
-      "items": [
-        "minecraft:mutton",
-        "minecraft:cooked_mutton"
-      ]
+      "items": "#chinesedelight:mutton"
     },
     {
       "items": "chinesedelight:peppercorn"

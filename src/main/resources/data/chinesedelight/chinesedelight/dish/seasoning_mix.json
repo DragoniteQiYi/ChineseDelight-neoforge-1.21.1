@@ -1,0 +1,14 @@
+{
+  "priority": 3,
+  "station": "iron_pot",
+  "must_have": [
+    {
+      "items": "chinesedelight:cookingsalt"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:plain_mix",
+    "count": 1
+  },
+  "fallback": true
+}

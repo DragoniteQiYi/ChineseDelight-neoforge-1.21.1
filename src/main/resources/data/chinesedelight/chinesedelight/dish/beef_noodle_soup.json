@@ -14,10 +14,7 @@
       "items": "chinesedelight:noodles"
     },
     {
-      "items": [
-        "minecraft:beef",
-        "minecraft:cooked_beef"
-      ]
+      "items": "#chinesedelight:beef"
     }
   ],
   "result": {

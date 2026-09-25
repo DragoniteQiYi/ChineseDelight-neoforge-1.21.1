@@ -252,6 +252,9 @@ const RECIPES = {
     mushroom_soup: g => { soup(g, C.brown, C.brownDark); for (let i = 0; i < 5; i++) put(g, 5 + i, 6 + (i % 2), C.brownDark); },
     cold_kelp: g => mound(g, [C.greenDark, C.green, C.cream, C.greenDark], 113),
     smoked_fish: g => fish(g, C.orange, C.brownDark),
+    // 兜底产物
+    spiced_mix: g => mound(g, [C.red, C.orange, C.brownDark, C.redDark], 127),
+    plain_mix: g => mound(g, [C.gray, C.cream, C.gold, C.brown], 131),
 };
 
 /* ---------------------------------------------------------------- 主流程 */

@@ -11,7 +11,7 @@
   },
   "must_have": [
     {
-      "items": "minecraft:egg"
+      "items": "#chinesedelight:egg"
     },
     {
       "items": "chinesedelight:bigscallion"

@@ -11,10 +11,7 @@
   },
   "must_have": [
     {
-      "items": [
-        "minecraft:porkchop",
-        "minecraft:cooked_porkchop"
-      ]
+      "items": "#chinesedelight:pork"
     },
     {
       "items": "chinesedelight:soysauce"

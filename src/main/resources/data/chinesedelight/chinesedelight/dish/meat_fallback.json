@@ -1,11 +1,11 @@
 {
   "priority": 7,
   "station": "iron_pot",
-  "flavors": {
-    "umami": {
-      "min": 2
+  "must_have": [
+    {
+      "items": "#chinesedelight:any_meat"
     }
-  },
+  ],
   "result": {
     "id": "chinesedelight:meat_stirfry",
     "count": 1

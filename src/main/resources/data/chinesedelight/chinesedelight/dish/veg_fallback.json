@@ -1,11 +1,11 @@
 {
   "priority": 6,
   "station": "iron_pot",
-  "flavors": {
-    "vegetable": {
-      "min": 1
+  "must_have": [
+    {
+      "items": "#chinesedelight:cookable_veg"
     }
-  },
+  ],
   "result": {
     "id": "chinesedelight:stir_fried_greens",
     "count": 1

@@ -75,7 +75,7 @@ const INGREDIENTS = [
     { id: 'beetroot_soup', items: 'minecraft:beetroot_soup', flavors: { vegetable: 2, sweet: 1 } },
     { id: 'cookie', items: 'minecraft:cookie', flavors: { sweet: 3, starchy: 1 } },
     { id: 'pumpkin_pie', items: 'minecraft:pumpkin_pie', flavors: { sweet: 3, starchy: 1 } },
-    // 通用标签兜底：其它模组的食物也能下锅
+    // 通用标签兜底：其它模组的食物也能下锅（下锅后算鱼，味道按很淡的鲜味计）
     { id: 'common_fishes', items: '#minecraft:fishes', flavors: { umami: 1 }, failureCategory: 'fish' },
 
     // ---- 中华乐事自己的作物与加工品 ----
@@ -127,25 +127,25 @@ const DISHES = [
     {
         id: 'garlic_sprout_omelet', priority: 30, station: 'iron_pot',
         flavors: { umami: { min: 2 }, oily: { min: 1 }, vegetable: { min: 1 } },
-        mustHave: [{ items: 'minecraft:egg' }, { items: `${NS}:garlicsprout` }],
+        mustHave: [{ items: `#${NS}:egg` }, { items: `${NS}:garlicsprout` }],
         result: `${NS}:omelet`,
     },
     {
         id: 'scallion_egg', priority: 26, station: 'iron_pot',
         flavors: { umami: { min: 2 }, oily: { min: 1 } },
-        mustHave: [{ items: 'minecraft:egg' }, { items: `${NS}:bigscallion` }],
+        mustHave: [{ items: `#${NS}:egg` }, { items: `${NS}:bigscallion` }],
         result: `${NS}:scallion_egg`,
     },
     {
         id: 'steamed_egg', priority: 22, station: 'iron_pot',
         flavors: { umami: { min: 2 } },
-        mustHave: [{ items: 'minecraft:egg' }, { items: `${NS}:soysauce` }],
+        mustHave: [{ items: `#${NS}:egg` }, { items: `${NS}:soysauce` }],
         result: `${NS}:steamed_egg`,
     },
     {
         id: 'egg_omelet', priority: 12, station: 'iron_pot',
         flavors: { umami: { min: 1 }, oily: { min: 1 } },
-        mustHave: [{ items: 'minecraft:egg' }],
+        mustHave: [{ items: `#${NS}:egg` }],
         result: `${NS}:omelet`,
     },
 
@@ -258,7 +258,7 @@ const DISHES = [
         id: 'fish_fragrant_pork', priority: 38, station: 'iron_pot',
         flavors: { sour: { min: 1 }, spicy: { min: 1 }, sweet: { min: 1 }, umami: { min: 3 } },
         mustHave: [
-            { items: ['minecraft:porkchop', 'minecraft:cooked_porkchop'] },
+            { items: `#${NS}:pork` },
             { items: `${NS}:pickledcabbage` },
         ],
         result: `${NS}:fish_fragrant_pork`,
@@ -267,7 +267,7 @@ const DISHES = [
         id: 'twice_cooked_pork', priority: 36, station: 'iron_pot',
         flavors: { spicy: { min: 1 }, umami: { min: 3 }, oily: { min: 1 } },
         mustHave: [
-            { items: ['minecraft:porkchop', 'minecraft:cooked_porkchop'] },
+            { items: `#${NS}:pork` },
             { items: `${NS}:doubanjiang` },
         ],
         result: `${NS}:twice_cooked_pork`,
@@ -276,7 +276,7 @@ const DISHES = [
         id: 'braised_pork', priority: 36, station: 'iron_pot',
         flavors: { umami: { min: 3 }, sweet: { min: 1 } },
         mustHave: [
-            { items: ['minecraft:porkchop', 'minecraft:cooked_porkchop'] },
+            { items: `#${NS}:pork` },
             { items: `${NS}:soysauce` },
             { items: 'minecraft:sugar' },
         ],
@@ -286,7 +286,7 @@ const DISHES = [
         id: 'beef_potato_stew', priority: 32, station: 'iron_pot',
         flavors: { umami: { min: 4 }, starchy: { min: 2 } },
         mustHave: [
-            { items: ['minecraft:beef', 'minecraft:cooked_beef'] },
+            { items: `#${NS}:beef` },
             { items: ['minecraft:potato', 'minecraft:baked_potato'] },
         ],
         result: `${NS}:beef_potato_stew`,
@@ -295,7 +295,7 @@ const DISHES = [
         id: 'cumin_mutton', priority: 30, station: 'iron_pot',
         flavors: { umami: { min: 3 }, spicy: { min: 1 }, numbing: { min: 1 } },
         mustHave: [
-            { items: ['minecraft:mutton', 'minecraft:cooked_mutton'] },
+            { items: `#${NS}:mutton` },
             { items: `${NS}:peppercorn` },
         ],
         result: `${NS}:cumin_mutton`,
@@ -304,7 +304,7 @@ const DISHES = [
         id: 'chili_pork', priority: 28, station: 'iron_pot',
         flavors: { spicy: { min: 2 }, umami: { min: 2 } },
         mustHave: [
-            { items: ['minecraft:porkchop', 'minecraft:cooked_porkchop', 'minecraft:beef', 'minecraft:cooked_beef'] },
+            { items: `#${NS}:pork` },
             { items: [`${NS}:red_chilli`, `${NS}:chilipowder`] },
         ],
         result: `${NS}:chili_pork`,
@@ -313,7 +313,7 @@ const DISHES = [
         id: 'scallion_beef', priority: 28, station: 'iron_pot',
         flavors: { umami: { min: 4 }, vegetable: { min: 1 } },
         mustHave: [
-            { items: ['minecraft:beef', 'minecraft:cooked_beef'] },
+            { items: `#${NS}:beef` },
             { items: `${NS}:bigscallion` },
         ],
         result: `${NS}:scallion_beef`,
@@ -322,7 +322,7 @@ const DISHES = [
         id: 'chicken_mushroom', priority: 28, station: 'iron_pot',
         flavors: { umami: { min: 4 }, vegetable: { min: 1 } },
         mustHave: [
-            { items: ['minecraft:chicken', 'minecraft:cooked_chicken'] },
+            { items: `#${NS}:chicken` },
             { items: ['minecraft:brown_mushroom', 'minecraft:red_mushroom'] },
         ],
         result: `${NS}:chicken_mushroom`,
@@ -331,7 +331,7 @@ const DISHES = [
         id: 'ginger_chicken', priority: 26, station: 'iron_pot',
         flavors: { umami: { min: 3 }, spicy: { min: 1 } },
         mustHave: [
-            { items: ['minecraft:chicken', 'minecraft:cooked_chicken'] },
+            { items: `#${NS}:chicken` },
             { items: `${NS}:ginger` },
         ],
         result: `${NS}:ginger_chicken`,
@@ -386,7 +386,7 @@ const DISHES = [
         flavors: { starchy: { min: 2 }, umami: { min: 2 } },
         mustHave: [
             { items: `${NS}:riceporridge` },
-            { items: 'minecraft:egg' },
+            { items: `#${NS}:egg` },
             { items: ['minecraft:carrot', `${NS}:edamame`, `${NS}:smallscallion`] },
         ],
         result: `${NS}:yangzhou_fried_rice`,
@@ -396,7 +396,7 @@ const DISHES = [
         flavors: { starchy: { min: 3 }, umami: { min: 4 } },
         mustHave: [
             { items: `${NS}:noodles` },
-            { items: ['minecraft:beef', 'minecraft:cooked_beef'] },
+            { items: `#${NS}:beef` },
         ],
         result: `${NS}:beef_noodle_soup`,
     },
@@ -412,7 +412,7 @@ const DISHES = [
     {
         id: 'egg_fried_rice', priority: 30, station: 'iron_pot',
         flavors: { starchy: { min: 3 }, umami: { min: 2 }, oily: { min: 1 } },
-        mustHave: [{ items: `${NS}:riceporridge` }, { items: 'minecraft:egg' }],
+        mustHave: [{ items: `${NS}:riceporridge` }, { items: `#${NS}:egg` }],
         result: `${NS}:egg_fried_rice`,
     },
     {
@@ -477,7 +477,7 @@ const DISHES = [
     {
         id: 'egg_drop_soup', priority: 24, station: 'iron_pot',
         flavors: { umami: { min: 2 }, salty: { min: 1 } },
-        mustHave: [{ items: 'minecraft:egg' }, { items: `${NS}:cookingsalt` }],
+        mustHave: [{ items: `#${NS}:egg` }, { items: `${NS}:cookingsalt` }],
         result: `${NS}:egg_drop_soup`,
     },
     {
@@ -517,28 +517,65 @@ const DISHES = [
         result: `${NS}:vegetable_stew`,
     },
     {
-        id: 'meat_stirfry_fallback', priority: 7, station: 'iron_pot', fallback: true,
-        flavors: { umami: { min: 2 } },
-        result: `${NS}:meat_stirfry`,
-    },
-    {
-        id: 'mixed_stirfry', priority: 6, station: 'iron_pot', fallback: true,
-        flavors: { vegetable: { min: 1 } },
-        result: `${NS}:stir_fried_greens`,
-    },
-    {
-        id: 'fish_stirfry_fallback', priority: 5, station: 'iron_pot', fallback: true,
-        flavors: { umami: { min: 1 } },
+        // 兜底菜必须「真的含有」它名字里的那类食材，否则会出现
+        // 「一块姜做出红烧鱼」这种荒谬结果（早期版本的 bug）。
+        // 所以兜底一律挂 must_have + 类型标签，而不是只看味觉数值。
+        id: 'fish_fallback', priority: 7, station: 'iron_pot', fallback: true,
+        mustHave: [{ items: `#${NS}:fish` }],
         result: `${NS}:braised_fish`,
     },
     {
-        id: 'oil_salt_mix', priority: 4, station: 'iron_pot', fallback: true,
-        flavors: { oily: { min: 1 } },
+        id: 'meat_fallback', priority: 7, station: 'iron_pot', fallback: true,
+        mustHave: [{ items: `#${NS}:any_meat` }],
+        result: `${NS}:meat_stirfry`,
+    },
+    {
+        id: 'tofu_fallback', priority: 7, station: 'iron_pot', fallback: true,
+        mustHave: [{ items: `${NS}:tofu` }],
+        result: `${NS}:home_style_tofu`,
+    },
+    {
+        id: 'egg_fallback', priority: 7, station: 'iron_pot', fallback: true,
+        mustHave: [{ items: `#${NS}:egg` }],
+        result: `${NS}:omelet`,
+    },
+    {
+        id: 'mushroom_fallback', priority: 7, station: 'iron_pot', fallback: true,
+        mustHave: [{ items: `#${NS}:mushroom` }],
+        result: `${NS}:mushroom_soup`,
+    },
+    {
+        id: 'veg_fallback', priority: 6, station: 'iron_pot', fallback: true,
+        mustHave: [{ items: `#${NS}:cookable_veg` }],
         result: `${NS}:stir_fried_greens`,
     },
     {
-        id: 'plain_fried', priority: 3, station: 'iron_pot', fallback: true,
+        id: 'noodle_fallback', priority: 6, station: 'iron_pot', fallback: true,
+        mustHave: [{ items: `${NS}:noodles` }],
+        result: `${NS}:fried_noodles`,
+    },
+    {
+        // 主食 / 淀粉类
+        id: 'staple_fallback', priority: 5, station: 'iron_pot', fallback: true,
+        mustHave: [{ items: `#${NS}:staple` }],
         result: `${NS}:stir_fried_greens`,
+    },
+    {
+        // 只剩调味料时给一碗麻辣香锅味的糊，比"红烧鱼"讲得通
+        id: 'spiced_mix', priority: 4, station: 'iron_pot', fallback: true,
+        mustHave: [{ items: `#${NS}:aromatic` }],
+        result: `${NS}:spiced_mix`,
+    },
+    {
+        // 纯调料（盐/醋/糖…）：还是给糊糊，但归类为"调料糊"更有说明性
+        id: 'seasoning_mix', priority: 3, station: 'iron_pot', fallback: true,
+        mustHave: [{ items: `${NS}:cookingsalt` }],
+        result: `${NS}:plain_mix`,
+    },
+    {
+        // 真正的最后兜底：任何能下锅的东西都不会空手而归
+        id: 'plain_mix', priority: 2, station: 'iron_pot', fallback: true,
+        result: `${NS}:plain_mix`,
     },
 
     /* ---- 惩罚料理（做不出任何菜时按食材类别出，吃了中毒 + 恶心） ---- */
@@ -549,21 +586,121 @@ const DISHES = [
 ];
 
 /**
- * 自定义物品标签。用在 must_have 里可以一次覆盖「生鱼 + 熟鱼」。
+ * 自定义物品标签。用在 must_have 里可以一次覆盖一整类食材。
  *
- * 这里可以混写标签和具体物品（标签文件的 values 允许多种写法），
- * 但 must_have 的 items 列表不行——所以复杂条件都收敛到标签里。
+ * 标签文件的 values 可以混写标签和具体物品；
+ * 但 must_have 的 items 列表不行（必须同质，见 DISHES 上方注释），
+ * 所以「生鱼 + 熟鱼」这种组合都收敛到标签里。
  */
 const TAGS = [
     {
         id: 'fish',
-        // values 写进数据包标签文件（可以混写标签和物品）
         values: ['#minecraft:fishes', 'minecraft:cooked_cod', 'minecraft:cooked_salmon'],
-        // members 只是给校验器用的「这个标签里有哪些物品」，
-        // 因为标签内容在生成期没法真实解析。改 values 时记得同步这里。
         members: [
             'minecraft:cod', 'minecraft:salmon', 'minecraft:tropical_fish', 'minecraft:pufferfish',
             'minecraft:cooked_cod', 'minecraft:cooked_salmon',
+        ],
+    },
+    {
+        id: 'raw_meat',
+        values: ['minecraft:beef', 'minecraft:porkchop', 'minecraft:chicken', 'minecraft:mutton'],
+        members: ['minecraft:beef', 'minecraft:porkchop', 'minecraft:chicken', 'minecraft:mutton'],
+    },
+    {
+        id: 'pork',
+        values: ['minecraft:porkchop', 'minecraft:cooked_porkchop'],
+        members: ['minecraft:porkchop', 'minecraft:cooked_porkchop'],
+    },
+    {
+        id: 'beef',
+        values: ['minecraft:beef', 'minecraft:cooked_beef'],
+        members: ['minecraft:beef', 'minecraft:cooked_beef'],
+    },
+    {
+        id: 'chicken',
+        values: ['minecraft:chicken', 'minecraft:cooked_chicken'],
+        members: ['minecraft:chicken', 'minecraft:cooked_chicken'],
+    },
+    {
+        id: 'mutton',
+        values: ['minecraft:mutton', 'minecraft:cooked_mutton'],
+        members: ['minecraft:mutton', 'minecraft:cooked_mutton'],
+    },
+    {
+        id: 'mushroom',
+        values: ['minecraft:brown_mushroom', 'minecraft:red_mushroom'],
+        members: ['minecraft:brown_mushroom', 'minecraft:red_mushroom'],
+    },
+    {
+        id: 'any_meat',
+        values: [
+            'minecraft:beef', 'minecraft:porkchop', 'minecraft:chicken', 'minecraft:mutton',
+            'minecraft:cooked_beef', 'minecraft:cooked_porkchop', 'minecraft:cooked_chicken', 'minecraft:cooked_mutton',
+        ],
+        members: [
+            'minecraft:beef', 'minecraft:porkchop', 'minecraft:chicken', 'minecraft:mutton',
+            'minecraft:cooked_beef', 'minecraft:cooked_porkchop', 'minecraft:cooked_chicken', 'minecraft:cooked_mutton',
+        ],
+    },
+    {
+        id: 'egg',
+        values: ['minecraft:egg', `${NS}:duckegg`],
+        members: ['minecraft:egg', `${NS}:duckegg`],
+    },
+    {
+        // 主要用来调味的辛香料，单独下锅不该变成一道荤菜
+        id: 'aromatic',
+        values: [`${NS}:ginger`, `${NS}:garlic`, `${NS}:peppercorn`, `${NS}:chilipowder`],
+        members: [`${NS}:ginger`, `${NS}:garlic`, `${NS}:peppercorn`, `${NS}:chilipowder`],
+    },
+    {
+        // 葱姜蒜：炒菜里当配菜也合理
+        id: 'scallion_ginger_garlic',
+        values: [`${NS}:smallscallion`, `${NS}:bigscallion`, `${NS}:ginger`, `${NS}:garlic`],
+        members: [`${NS}:smallscallion`, `${NS}:bigscallion`, `${NS}:ginger`, `${NS}:garlic`],
+    },
+    {
+        // 可以「直接下锅炒」的蔬菜，用来兜底炒素菜
+        id: 'cookable_veg',
+        values: [
+            'minecraft:carrot', 'minecraft:potato', 'minecraft:baked_potato', 'minecraft:beetroot',
+            'minecraft:kelp', 'minecraft:melon_slice',
+            'minecraft:brown_mushroom', 'minecraft:red_mushroom',
+            `${NS}:smallscallion`, `${NS}:bigscallion`, `${NS}:garlicsprout`, `${NS}:garlicscape`,
+            `${NS}:napacabbage`, `${NS}:edamame`, `${NS}:soybean`, `${NS}:red_chilli`,
+            `${NS}:garlic`, `${NS}:ginger`,
+        ],
+        members: [
+            'minecraft:carrot', 'minecraft:potato', 'minecraft:baked_potato', 'minecraft:beetroot',
+            'minecraft:kelp', 'minecraft:melon_slice',
+            'minecraft:brown_mushroom', 'minecraft:red_mushroom',
+            `${NS}:smallscallion`, `${NS}:bigscallion`, `${NS}:garlicsprout`, `${NS}:garlicscape`,
+            `${NS}:napacabbage`, `${NS}:edamame`, `${NS}:soybean`, `${NS}:red_chilli`,
+            `${NS}:garlic`, `${NS}:ginger`,
+        ],
+    },
+    {
+        // 下锅后会变成汤的食材
+        id: 'soup_stuff',
+        values: [
+            'minecraft:kelp', 'minecraft:dried_kelp', 'minecraft:brown_mushroom', 'minecraft:red_mushroom',
+            `${NS}:napacabbage`, `${NS}:tofu`,
+        ],
+        members: [
+            'minecraft:kelp', 'minecraft:dried_kelp', 'minecraft:brown_mushroom', 'minecraft:red_mushroom',
+            `${NS}:napacabbage`, `${NS}:tofu`,
+        ],
+    },
+    {
+        // 能当主食的
+        id: 'staple',
+        values: [
+            `${NS}:riceporridge`, `${NS}:noodles`, `${NS}:steamedbun`, 'minecraft:bread',
+            `${NS}:dough`, `${NS}:flour`, `${NS}:starch`,
+        ],
+        members: [
+            `${NS}:riceporridge`, `${NS}:noodles`, `${NS}:steamedbun`, 'minecraft:bread',
+            `${NS}:dough`, `${NS}:flour`, `${NS}:starch`,
         ],
     },
 ];
@@ -647,6 +784,9 @@ const DISH_ITEMS = [
     { id: 'sour_potato_shreds', zh: '酸辣土豆丝', en: 'Hot & Sour Potato Shreds', nutrition: 7, saturation: 0.7, effect: 'haste' },
     { id: 'vegetable_stew', zh: '蔬菜杂烩', en: 'Vegetable Stew', nutrition: 6, saturation: 0.6 },
     { id: 'mushroom_stirfry', zh: '炒蘑菇', en: 'Stir-fried Mushrooms', nutrition: 6, saturation: 0.6 },
+    // 只剩调味料时的产物，比硬套一道荤菜讲得通
+    { id: 'spiced_mix', zh: '麻辣香锅底', en: 'Spiced Mix', nutrition: 4, saturation: 0.4 },
+    { id: 'plain_mix', zh: '什锦混炒', en: 'Mixed Fry', nutrition: 4, saturation: 0.4 },
     // 肉
     { id: 'fish_fragrant_pork', zh: '鱼香肉丝', en: 'Fish-fragrant Pork', nutrition: 9, saturation: 1.1, effect: 'speed' },
     { id: 'twice_cooked_pork', zh: '回锅肉', en: 'Twice-cooked Pork', nutrition: 9, saturation: 1.1, effect: 'strength' },

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "chinesedelight:riceporridge",
+    "chinesedelight:noodles",
+    "chinesedelight:steamedbun",
+    "minecraft:bread",
+    "chinesedelight:dough",
+    "chinesedelight:flour",
+    "chinesedelight:starch"
+  ]
+}

@@ -14,7 +14,7 @@
   },
   "must_have": [
     {
-      "items": "minecraft:egg"
+      "items": "#chinesedelight:egg"
     },
     {
       "items": "chinesedelight:garlicsprout"

@@ -8,6 +8,8 @@
  *   3. 是否缺兜底菜 / 缺惩罚料理
  *   4. 采样模拟：找出被遮蔽的菜，并统计「出失败料理」的比例
  */
+const fs = require('fs');
+const path = require('path');
 const data = require('./data');
 const NS = data.NS;
 
@@ -47,13 +49,35 @@ for (const ingredient of data.INGREDIENTS) {
 
 const knownModItems = new Set();
 for (const item of data.DISH_ITEMS) knownModItems.add(`${NS}:${item.id}`);
+// Java 侧 ModItems 注册的物品（从源码读，避免手工维护两份名单）
+const modItemsSrc = fs.readFileSync(
+    path.resolve(__dirname, '..', '..', 'src', 'main', 'java', 'com', 'qiyi', 'chinesedelight', 'item', 'ModItems.java'),
+    'utf8');
+{
+    let m;
+    const re = /ITEMS\.register(?:Simple)?Item\("([a-z_0-9]+)"|ITEMS\.registerItem\("([a-z_0-9]+)"/g;
+    while ((m = re.exec(modItemsSrc)) !== null) knownModItems.add(`${NS}:${m[1] || m[2]}`);
+}
 for (const ingredient of data.INGREDIENTS) {
     const items = Array.isArray(ingredient.items) ? ingredient.items : [ingredient.items];
     for (const item of items) if (item.startsWith(`${NS}:`)) knownModItems.add(item);
 }
+// 自定义标签同样是合法的 must_have 引用目标
+const knownTags = new Set();
+for (const tag of data.TAGS || []) {
+    knownModItems.add(`#${NS}:${tag.id}`);
+    knownTags.add(`#${NS}:${tag.id}`);
+}
 
 function checkItemRef(where, ref) {
-    if (typeof ref !== 'string' || ref.startsWith('#')) return;
+    if (typeof ref !== 'string') return;
+    if (ref.startsWith('#')) {
+        // 自定义标签必须真的定义过（原生标签如 #minecraft:fishes 放行）
+        if (ref.startsWith(`#${NS}:`) && !knownTags.has(ref)) {
+            warnings.push(`${where}: 引用了未定义的标签 ${ref}`);
+        }
+        return;
+    }
     if (ref.startsWith(`${NS}:`) && !knownModItems.has(ref)) {
         warnings.push(`${where}: 引用了未登记的模组物品 ${ref}`);
     }
@@ -68,8 +92,6 @@ for (const dish of data.DISHES) {
 }
 
 // 每个菜品成品都要有贴图
-const fs = require('fs');
-const path = require('path');
 const texDir = path.resolve(__dirname, '..', '..', 'src', 'main', 'resources', 'assets', NS, 'textures', 'item');
 for (const item of data.DISH_ITEMS) {
     const file = path.join(texDir, `${item.texture || item.id}.png`);
@@ -171,6 +193,8 @@ for (const ingredient of data.INGREDIENTS) {
     const items = Array.isArray(ingredient.items) ? ingredient.items : [ingredient.items];
     for (const it of items) if (it.startsWith(`${NS}:`)) knownItems.add(it);
 }
+// 自定义标签也是合法的 must_have 引用目标
+for (const tag of data.TAGS || []) knownItems.add(`#${NS}:${tag.id}`);
 // 菜品成品
 for (const item of data.DISH_ITEMS) knownItems.add(`${NS}:${item.id}`);
 
@@ -394,6 +418,10 @@ for (const [id, count] of hits.entries()) {
         warnings.push(`菜品 ${id}：穷举 1~4 格的所有组合都做不出来（条件互相矛盾）`);
     } else if (matchedOnly.get(id) === 0) {
         // 能匹配但采样没碰到，属于正常（条件较窄）
+        continue;
+    } else if (dish.fallback) {
+        // 兜底菜被同名类的具体菜遮蔽是<b>设计意图</b>：兜底只是安全网，
+        // 保证「以后有人改坏/删掉具体菜」时玩家仍能拿到合理产物。
         continue;
     } else {
         warnings.push(`菜品 ${id}：可做（例如 ${example.join(' + ')}）但一次都没赢过，被更高优先级的菜完全遮蔽`);

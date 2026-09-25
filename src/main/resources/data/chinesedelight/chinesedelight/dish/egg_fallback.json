@@ -1,14 +1,6 @@
 {
-  "priority": 12,
+  "priority": 7,
   "station": "iron_pot",
-  "flavors": {
-    "umami": {
-      "min": 1
-    },
-    "oily": {
-      "min": 1
-    }
-  },
   "must_have": [
     {
       "items": "#chinesedelight:egg"
@@ -17,5 +9,6 @@
   "result": {
     "id": "chinesedelight:omelet",
     "count": 1
-  }
+  },
+  "fallback": true
 }

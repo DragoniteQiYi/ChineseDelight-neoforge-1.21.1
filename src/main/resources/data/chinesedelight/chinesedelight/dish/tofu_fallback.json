@@ -1,0 +1,14 @@
+{
+  "priority": 7,
+  "station": "iron_pot",
+  "must_have": [
+    {
+      "items": "chinesedelight:tofu"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:home_style_tofu",
+    "count": 1
+  },
+  "fallback": true
+}

@@ -11,10 +11,7 @@
   },
   "must_have": [
     {
-      "items": [
-        "minecraft:chicken",
-        "minecraft:cooked_chicken"
-      ]
+      "items": "#chinesedelight:chicken"
     },
     {
       "items": [

@@ -1,0 +1,14 @@
+{
+  "priority": 7,
+  "station": "iron_pot",
+  "must_have": [
+    {
+      "items": "#chinesedelight:mushroom"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:mushroom_soup",
+    "count": 1
+  },
+  "fallback": true
+}

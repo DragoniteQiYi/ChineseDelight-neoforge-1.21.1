@@ -1,0 +1,14 @@
+{
+  "priority": 4,
+  "station": "iron_pot",
+  "must_have": [
+    {
+      "items": "#chinesedelight:aromatic"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:spiced_mix",
+    "count": 1
+  },
+  "fallback": true
+}

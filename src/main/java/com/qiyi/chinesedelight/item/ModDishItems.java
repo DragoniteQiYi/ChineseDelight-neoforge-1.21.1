@@ -54,6 +54,8 @@ public final class ModDishItems {
         dishes.add(new DishFood("sour_potato_shreds", 7, 0.7F, List.of(new MobEffectInstance(MobEffects.DIG_SPEED, 300, 0))));
         dishes.add(new DishFood("vegetable_stew", 6, 0.6F, List.of()));
         dishes.add(new DishFood("mushroom_stirfry", 6, 0.6F, List.of()));
+        dishes.add(new DishFood("spiced_mix", 4, 0.4F, List.of()));
+        dishes.add(new DishFood("plain_mix", 4, 0.4F, List.of()));
         dishes.add(new DishFood("fish_fragrant_pork", 9, 1.1F, List.of(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300, 0))));
         dishes.add(new DishFood("twice_cooked_pork", 9, 1.1F, List.of(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 300, 0))));
         dishes.add(new DishFood("braised_pork", 10, 1.2F, List.of(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 0))));

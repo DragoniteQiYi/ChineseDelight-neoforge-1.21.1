@@ -1,11 +1,11 @@
 {
-  "priority": 4,
+  "priority": 5,
   "station": "iron_pot",
-  "flavors": {
-    "oily": {
-      "min": 1
+  "must_have": [
+    {
+      "items": "#chinesedelight:staple"
     }
-  },
+  ],
   "result": {
     "id": "chinesedelight:stir_fried_greens",
     "count": 1

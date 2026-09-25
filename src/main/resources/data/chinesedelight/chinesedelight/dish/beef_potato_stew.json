@@ -11,10 +11,7 @@
   },
   "must_have": [
     {
-      "items": [
-        "minecraft:beef",
-        "minecraft:cooked_beef"
-      ]
+      "items": "#chinesedelight:beef"
     },
     {
       "items": [

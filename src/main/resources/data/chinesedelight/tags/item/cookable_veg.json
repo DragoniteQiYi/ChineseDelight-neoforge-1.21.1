@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:carrot",
+    "minecraft:potato",
+    "minecraft:baked_potato",
+    "minecraft:beetroot",
+    "minecraft:kelp",
+    "minecraft:melon_slice",
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "chinesedelight:smallscallion",
+    "chinesedelight:bigscallion",
+    "chinesedelight:garlicsprout",
+    "chinesedelight:garlicscape",
+    "chinesedelight:napacabbage",
+    "chinesedelight:edamame",
+    "chinesedelight:soybean",
+    "chinesedelight:red_chilli",
+    "chinesedelight:garlic",
+    "chinesedelight:ginger"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:kelp",
+    "minecraft:dried_kelp",
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "chinesedelight:napacabbage",
+    "chinesedelight:tofu"
+  ]
+}
