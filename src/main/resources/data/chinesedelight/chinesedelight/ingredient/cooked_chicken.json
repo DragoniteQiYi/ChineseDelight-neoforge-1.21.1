@@ -1,0 +1,7 @@
+{
+  "items": "minecraft:cooked_chicken",
+  "flavors": {
+    "umami": 3
+  },
+  "failure_category": "meat"
+}

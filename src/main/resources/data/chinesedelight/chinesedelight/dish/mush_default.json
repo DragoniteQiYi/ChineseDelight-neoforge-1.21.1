@@ -1,0 +1,9 @@
+{
+  "station": "iron_pot",
+  "result": {
+    "id": "chinesedelight:mush_default",
+    "count": 1
+  },
+  "failure": true,
+  "failure_category": "default"
+}

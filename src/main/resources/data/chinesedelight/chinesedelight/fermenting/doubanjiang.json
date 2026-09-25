@@ -1,0 +1,20 @@
+{
+  "ingredients": [
+    {
+      "items": "chinesedelight:soybean",
+      "min": 2
+    },
+    {
+      "items": "chinesedelight:chili"
+    },
+    {
+      "items": "chinesedelight:cookingsalt"
+    }
+  ],
+  "water": true,
+  "time": 2400,
+  "result": {
+    "id": "chinesedelight:doubanjiang",
+    "count": 2
+  }
+}

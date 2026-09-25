@@ -43,7 +43,7 @@ public class ChineseDelight
 
         NeoForge.EVENT_BUS.register(this);
 
-        LOGGER.info("Chinese Delight (五味俱全) is loading");
+        LOGGER.info("中华乐事 (Chinese Delight) is loading");
     }
 
     @SubscribeEvent

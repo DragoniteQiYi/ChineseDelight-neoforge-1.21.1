@@ -1,0 +1,34 @@
+{
+  "priority": 40,
+  "station": "iron_pot",
+  "flavors": {
+    "spicy": {
+      "min": 2,
+      "max": 5
+    },
+    "umami": {
+      "min": 2
+    },
+    "numbing": {
+      "min": 1
+    },
+    "oily": {
+      "min": 1
+    },
+    "sweet": {
+      "max": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:tofu"
+    },
+    {
+      "items": "chinesedelight:doubanjiang"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:mapo_tofu",
+    "count": 1
+  }
+}

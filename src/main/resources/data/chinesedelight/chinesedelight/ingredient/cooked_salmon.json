@@ -1,0 +1,8 @@
+{
+  "items": "minecraft:cooked_salmon",
+  "flavors": {
+    "umami": 3,
+    "oily": 1
+  },
+  "failure_category": "fish"
+}

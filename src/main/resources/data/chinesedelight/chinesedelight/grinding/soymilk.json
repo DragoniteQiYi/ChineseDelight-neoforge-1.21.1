@@ -1,0 +1,10 @@
+{
+  "input": "chinesedelight:soybean",
+  "water": true,
+  "time": 100,
+  "output_mode": "bucket",
+  "result": {
+    "id": "chinesedelight:soymilk_bucket",
+    "count": 1
+  }
+}

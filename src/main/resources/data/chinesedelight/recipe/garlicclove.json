@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "chinesedelight:garlic" }
+  ],
+  "result": {
+    "count": 8,
+    "id": "chinesedelight:garlicclove"
+  }
+}

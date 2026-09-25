@@ -1,0 +1,8 @@
+{
+  "items": "minecraft:porkchop",
+  "flavors": {
+    "umami": 2,
+    "oily": 1
+  },
+  "failure_category": "meat"
+}

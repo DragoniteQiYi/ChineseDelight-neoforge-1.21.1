@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": { "item": "chinesedelight:soymilk_bucket" },
+  "result": {
+    "id": "chinesedelight:cookedsoymilk_bucket"
+  }
+}

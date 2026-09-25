@@ -1,0 +1,16 @@
+{
+  "ingredients": [
+    {
+      "items": "chinesedelight:napacabbage"
+    },
+    {
+      "items": "chinesedelight:cookingsalt"
+    }
+  ],
+  "water": true,
+  "time": 3600,
+  "result": {
+    "id": "chinesedelight:pickledcabbage",
+    "count": 2
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "items": "minecraft:cooked_mutton",
+  "flavors": {
+    "umami": 3,
+    "oily": 1
+  },
+  "failure_category": "meat"
+}

@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "chinesedelight:napacabbagecrop",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ],
+              "name": "chinesedelight:napacabbage"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "chinesedelight:napacabbageseed"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "chinesedelight:napacabbagecrop",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "3"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "count": 2,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "chinesedelight:napacabbageseed"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "chinesedelight:blocks/napacabbagecrop"
+}

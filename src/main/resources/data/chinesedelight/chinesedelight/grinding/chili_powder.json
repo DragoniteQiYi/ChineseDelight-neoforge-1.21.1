@@ -1,0 +1,10 @@
+{
+  "input": "chinesedelight:chili",
+  "water": false,
+  "time": 80,
+  "output_mode": "item",
+  "result": {
+    "id": "chinesedelight:chilipowder",
+    "count": 1
+  }
+}

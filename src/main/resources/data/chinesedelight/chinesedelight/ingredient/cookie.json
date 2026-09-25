@@ -1,0 +1,7 @@
+{
+  "items": "minecraft:cookie",
+  "flavors": {
+    "sweet": 3,
+    "starchy": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "items": "minecraft:bread",
+  "flavors": {
+    "starchy": 3,
+    "sweet": 1
+  }
+}

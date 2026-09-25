@@ -1,0 +1,7 @@
+{
+  "items": "minecraft:mushroom_stew",
+  "flavors": {
+    "umami": 2,
+    "vegetable": 2
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "items": "minecraft:melon_slice",
+  "flavors": {
+    "sweet": 2,
+    "vegetable": 1
+  }
+}

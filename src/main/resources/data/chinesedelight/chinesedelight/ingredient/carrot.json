@@ -1,0 +1,7 @@
+{
+  "items": "minecraft:carrot",
+  "flavors": {
+    "vegetable": 2,
+    "sweet": 1
+  }
+}

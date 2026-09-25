@@ -1,0 +1,8 @@
+{
+  "items": "chinesedelight:omelet",
+  "flavors": {
+    "umami": 2,
+    "oily": 1,
+    "starchy": 1
+  }
+}

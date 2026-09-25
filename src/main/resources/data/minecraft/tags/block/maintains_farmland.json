@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "chinesedelight:scallioncrop",
+    "chinesedelight:gingercrop",
+    "chinesedelight:garliccrop",
+    "chinesedelight:napacabbagecrop",
+    "chinesedelight:soybeancrop",
+    "chinesedelight:peppercorncrop",
+    "chinesedelight:chilicrop"
+  ]
+}

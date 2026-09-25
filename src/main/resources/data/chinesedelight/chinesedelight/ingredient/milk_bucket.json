@@ -1,0 +1,7 @@
+{
+  "items": "minecraft:milk_bucket",
+  "flavors": {
+    "sweet": 1,
+    "oily": 1
+  }
+}

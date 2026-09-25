@@ -1,0 +1,27 @@
+{
+  "priority": 26,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 2
+    },
+    "oily": {
+      "min": 1
+    },
+    "vegetable": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": "minecraft:egg"
+    },
+    {
+      "items": "chinesedelight:garlicsprout"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:omelet",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "items": "minecraft:potato",
+  "flavors": {
+    "vegetable": 2,
+    "starchy": 2
+  }
+}

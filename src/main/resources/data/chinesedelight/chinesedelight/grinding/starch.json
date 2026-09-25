@@ -1,0 +1,10 @@
+{
+  "input": "minecraft:potato",
+  "water": false,
+  "time": 100,
+  "output_mode": "item",
+  "result": {
+    "id": "chinesedelight:starch",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": { "item": "minecraft:stone" },
+    "|": { "item": "minecraft:stick" }
+  },
+  "pattern": [
+    "###",
+    "#|#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chinesedelight:stonemill"
+  }
+}

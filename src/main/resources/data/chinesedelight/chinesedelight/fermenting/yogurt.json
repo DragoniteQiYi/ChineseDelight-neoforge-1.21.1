@@ -1,0 +1,13 @@
+{
+  "ingredients": [
+    {
+      "items": "minecraft:milk_bucket"
+    }
+  ],
+  "water": false,
+  "time": 600,
+  "result": {
+    "id": "chinesedelight:yogurt_bucket",
+    "count": 1
+  }
+}

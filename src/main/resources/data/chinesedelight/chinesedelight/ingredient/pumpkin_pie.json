@@ -1,0 +1,7 @@
+{
+  "items": "minecraft:pumpkin_pie",
+  "flavors": {
+    "sweet": 3,
+    "starchy": 1
+  }
+}

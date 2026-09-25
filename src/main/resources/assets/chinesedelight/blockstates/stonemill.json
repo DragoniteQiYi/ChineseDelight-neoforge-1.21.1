@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "grinding=false": {
+      "model": "chinesedelight:block/stonemill"
+    },
+    "grinding=true": {
+      "model": "chinesedelight:block/stonemill_active"
+    }
+  }
+}

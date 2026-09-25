@@ -1,0 +1,8 @@
+{
+  "items": "minecraft:pufferfish",
+  "flavors": {
+    "umami": 2,
+    "bitter": 1
+  },
+  "failure_category": "fish"
+}

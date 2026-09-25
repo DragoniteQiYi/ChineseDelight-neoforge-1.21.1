@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "chinesedelight:peppercorncrop",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 1.0,
+                    "max": 2.0
+                  },
+                  "function": "minecraft:set_count"
+                }
+              ],
+              "name": "chinesedelight:peppercorn"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "chinesedelight:peppercornseed"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "chinesedelight:blocks/peppercorncrop"
+}

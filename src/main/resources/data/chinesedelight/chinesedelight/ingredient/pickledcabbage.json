@@ -1,0 +1,8 @@
+{
+  "items": "chinesedelight:pickledcabbage",
+  "flavors": {
+    "vegetable": 1,
+    "sour": 3,
+    "salty": 1
+  }
+}

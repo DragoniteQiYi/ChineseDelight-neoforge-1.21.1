@@ -1,0 +1,7 @@
+{
+  "items": "minecraft:beetroot",
+  "flavors": {
+    "vegetable": 2,
+    "sweet": 1
+  }
+}

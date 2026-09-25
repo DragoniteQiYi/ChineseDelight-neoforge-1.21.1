@@ -1,0 +1,7 @@
+{
+  "items": "minecraft:sweet_berries",
+  "flavors": {
+    "sweet": 2,
+    "sour": 1
+  }
+}

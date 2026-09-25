@@ -1,0 +1,7 @@
+{
+  "items": "minecraft:tropical_fish",
+  "flavors": {
+    "umami": 1
+  },
+  "failure_category": "fish"
+}

@@ -1,0 +1,7 @@
+{
+  "items": "#minecraft:fishes",
+  "flavors": {
+    "umami": 1
+  },
+  "failure_category": "fish"
+}

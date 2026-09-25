@@ -1,4 +1,4 @@
-Chinese Delight（五味俱全）
+中华乐事 (Chinese Delight)
 =======
 
 A Minecraft mod about Chinese cuisine for **NeoForge 1.21.1**.

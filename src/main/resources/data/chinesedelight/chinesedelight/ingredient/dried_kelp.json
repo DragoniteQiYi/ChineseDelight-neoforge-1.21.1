@@ -1,0 +1,8 @@
+{
+  "items": "minecraft:dried_kelp",
+  "flavors": {
+    "salty": 3,
+    "umami": 2
+  },
+  "failure_category": "fish"
+}

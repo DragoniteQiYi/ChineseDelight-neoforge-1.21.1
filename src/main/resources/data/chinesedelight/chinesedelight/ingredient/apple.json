@@ -1,0 +1,7 @@
+{
+  "items": "minecraft:apple",
+  "flavors": {
+    "sweet": 2,
+    "sour": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ingredients": [
+    {
+      "items": "chinesedelight:flour",
+      "min": 2
+    }
+  ],
+  "water": true,
+  "time": 200,
+  "result": {
+    "id": "chinesedelight:dough",
+    "count": 2
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "items": "minecraft:rotten_flesh",
+  "flavors": {
+    "umami": 1,
+    "bitter": 1
+  },
+  "failure_category": "meat"
+}

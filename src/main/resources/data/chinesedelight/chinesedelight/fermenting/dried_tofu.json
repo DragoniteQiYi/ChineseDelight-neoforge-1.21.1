@@ -1,0 +1,17 @@
+{
+  "ingredients": [
+    {
+      "items": "chinesedelight:tofu",
+      "min": 2
+    },
+    {
+      "items": "chinesedelight:cookingsalt"
+    }
+  ],
+  "water": false,
+  "time": 1200,
+  "result": {
+    "id": "chinesedelight:driedtofu",
+    "count": 2
+  }
+}

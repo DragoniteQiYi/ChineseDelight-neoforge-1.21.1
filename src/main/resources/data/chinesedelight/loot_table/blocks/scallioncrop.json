@@ -1,0 +1,95 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "chinesedelight:scallioncrop",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "2"
+                  }
+                }
+              ],
+              "name": "chinesedelight:bigscallion"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "chinesedelight:scallioncrop",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "1"
+                  }
+                }
+              ],
+              "name": "chinesedelight:smallscallion"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "chinesedelight:scallionseed"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "chinesedelight:scallioncrop",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "2"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "count": 2,
+                  "function": "minecraft:set_count"
+                }
+              ],
+              "name": "chinesedelight:scallionseed"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "chinesedelight:scallioncrop",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "1"
+                  }
+                }
+              ],
+              "name": "chinesedelight:scallionseed"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "chinesedelight:blocks/scallioncrop"
+}

@@ -1,0 +1,17 @@
+{
+  "priority": 5,
+  "station": "iron_pot",
+  "flavors": {
+    "vegetable": {
+      "min": 2
+    },
+    "salty": {
+      "min": 1
+    }
+  },
+  "result": {
+    "id": "chinesedelight:vegetable_stew",
+    "count": 1
+  },
+  "fallback": true
+}
