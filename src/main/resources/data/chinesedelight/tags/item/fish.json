@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:fishes",
+    "minecraft:cooked_cod",
+    "minecraft:cooked_salmon"
+  ]
+}

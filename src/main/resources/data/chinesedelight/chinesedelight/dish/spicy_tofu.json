@@ -1,0 +1,24 @@
+{
+  "priority": 34,
+  "station": "iron_pot",
+  "flavors": {
+    "spicy": {
+      "min": 2
+    },
+    "umami": {
+      "min": 2
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:tofu"
+    },
+    {
+      "items": "chinesedelight:red_chilli"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:spicy_tofu",
+    "count": 1
+  }
+}

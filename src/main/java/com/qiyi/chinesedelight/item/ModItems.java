@@ -131,7 +131,7 @@ public class ModItems {
     public static final DeferredItem<BlockItem> PEPPERCORN_SEED = ITEMS.registerItem("peppercornseed",
             props -> new SeedBlockItem(ModBlocks.PEPPERCORN_CROP.get(), props));
 
-    public static final DeferredItem<Item> CHILI = ITEMS.registerSimpleItem("chili");
+    public static final DeferredItem<Item> RED_CHILLI = ITEMS.registerSimpleItem("red_chilli");
 
     public static final DeferredItem<BlockItem> CHILI_SEED = ITEMS.registerItem("chiliseed",
             props -> new SeedBlockItem(ModBlocks.CHILI_CROP.get(), props));

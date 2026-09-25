@@ -1,0 +1,27 @@
+{
+  "priority": 26,
+  "station": "iron_pot",
+  "flavors": {
+    "starchy": {
+      "min": 2
+    },
+    "oily": {
+      "min": 2
+    }
+  },
+  "must_have": [
+    {
+      "items": [
+        "chinesedelight:dough",
+        "chinesedelight:flour"
+      ]
+    },
+    {
+      "items": "chinesedelight:smallscallion"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:scallion_pancake",
+    "count": 1
+  }
+}

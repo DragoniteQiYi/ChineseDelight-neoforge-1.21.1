@@ -1,0 +1,9 @@
+{
+  "priority": 3,
+  "station": "iron_pot",
+  "result": {
+    "id": "chinesedelight:stir_fried_greens",
+    "count": 1
+  },
+  "fallback": true
+}

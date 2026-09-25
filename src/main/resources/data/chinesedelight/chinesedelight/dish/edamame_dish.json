@@ -1,0 +1,18 @@
+{
+  "priority": 14,
+  "station": "iron_pot",
+  "flavors": {
+    "vegetable": {
+      "min": 2
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:edamame"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:edamame_dish",
+    "count": 1
+  }
+}

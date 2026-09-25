@@ -1,0 +1,27 @@
+{
+  "priority": 26,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 3
+    },
+    "spicy": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": [
+        "minecraft:chicken",
+        "minecraft:cooked_chicken"
+      ]
+    },
+    {
+      "items": "chinesedelight:ginger"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:ginger_chicken",
+    "count": 1
+  }
+}

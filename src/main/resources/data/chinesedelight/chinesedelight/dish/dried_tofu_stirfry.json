@@ -1,0 +1,21 @@
+{
+  "priority": 22,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 3
+    },
+    "oily": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:driedtofu"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:dried_tofu_stirfry",
+    "count": 1
+  }
+}

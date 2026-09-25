@@ -1,0 +1,18 @@
+{
+  "priority": 10,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:tofu"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:home_style_tofu",
+    "count": 1
+  }
+}

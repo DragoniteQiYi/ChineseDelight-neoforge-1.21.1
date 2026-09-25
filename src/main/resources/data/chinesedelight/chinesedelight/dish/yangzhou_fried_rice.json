@@ -1,0 +1,31 @@
+{
+  "priority": 34,
+  "station": "iron_pot",
+  "flavors": {
+    "starchy": {
+      "min": 2
+    },
+    "umami": {
+      "min": 2
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:riceporridge"
+    },
+    {
+      "items": "minecraft:egg"
+    },
+    {
+      "items": [
+        "minecraft:carrot",
+        "chinesedelight:edamame",
+        "chinesedelight:smallscallion"
+      ]
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:yangzhou_fried_rice",
+    "count": 1
+  }
+}

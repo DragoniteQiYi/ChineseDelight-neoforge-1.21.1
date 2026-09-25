@@ -1,0 +1,24 @@
+{
+  "priority": 24,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 2
+    },
+    "salty": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": "minecraft:egg"
+    },
+    {
+      "items": "chinesedelight:cookingsalt"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:egg_drop_soup",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "priority": 22,
+  "station": "iron_pot",
+  "flavors": {
+    "salty": {
+      "min": 2
+    },
+    "sour": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": [
+        "minecraft:kelp",
+        "minecraft:dried_kelp"
+      ]
+    },
+    {
+      "items": "chinesedelight:vinegar"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:cold_kelp",
+    "count": 1
+  }
+}

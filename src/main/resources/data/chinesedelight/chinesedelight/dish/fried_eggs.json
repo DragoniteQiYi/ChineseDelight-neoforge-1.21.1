@@ -1,0 +1,16 @@
+{
+  "priority": 16,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 2
+    },
+    "oily": {
+      "min": 2
+    }
+  },
+  "result": {
+    "id": "chinesedelight:omelet",
+    "count": 1
+  }
+}

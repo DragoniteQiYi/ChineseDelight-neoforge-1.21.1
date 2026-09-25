@@ -1,0 +1,33 @@
+{
+  "priority": 26,
+  "station": "iron_pot",
+  "flavors": {
+    "starchy": {
+      "min": 3
+    },
+    "sour": {
+      "min": 2
+    },
+    "spicy": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": [
+        "minecraft:potato",
+        "minecraft:baked_potato"
+      ]
+    },
+    {
+      "items": [
+        "chinesedelight:red_chilli",
+        "chinesedelight:chilipowder"
+      ]
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:sour_potato_shreds",
+    "count": 1
+  }
+}

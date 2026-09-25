@@ -1,0 +1,27 @@
+{
+  "priority": 32,
+  "station": "iron_pot",
+  "flavors": {
+    "starchy": {
+      "min": 3
+    },
+    "sour": {
+      "min": 2
+    },
+    "spicy": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:noodles"
+    },
+    {
+      "items": "chinesedelight:vinegar"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:sour_noodles",
+    "count": 1
+  }
+}

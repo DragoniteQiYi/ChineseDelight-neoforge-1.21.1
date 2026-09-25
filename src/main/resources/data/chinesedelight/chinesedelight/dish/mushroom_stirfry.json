@@ -1,0 +1,21 @@
+{
+  "priority": 18,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 3
+    }
+  },
+  "must_have": [
+    {
+      "items": [
+        "minecraft:brown_mushroom",
+        "minecraft:red_mushroom"
+      ]
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:mushroom_stirfry",
+    "count": 1
+  }
+}

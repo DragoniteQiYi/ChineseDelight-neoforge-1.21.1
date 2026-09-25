@@ -1,0 +1,16 @@
+{
+  "priority": 20,
+  "station": "iron_pot",
+  "flavors": {
+    "starchy": {
+      "min": 4
+    },
+    "salty": {
+      "max": 2
+    }
+  },
+  "result": {
+    "id": "chinesedelight:riceporridge",
+    "count": 1
+  }
+}

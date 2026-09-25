@@ -1,0 +1,24 @@
+{
+  "priority": 32,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 2
+    },
+    "vegetable": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": "#chinesedelight:fish"
+    },
+    {
+      "items": "chinesedelight:ginger"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:steamed_fish",
+    "count": 1
+  }
+}

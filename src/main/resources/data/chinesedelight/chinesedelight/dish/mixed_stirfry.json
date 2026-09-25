@@ -1,0 +1,14 @@
+{
+  "priority": 6,
+  "station": "iron_pot",
+  "flavors": {
+    "vegetable": {
+      "min": 1
+    }
+  },
+  "result": {
+    "id": "chinesedelight:stir_fried_greens",
+    "count": 1
+  },
+  "fallback": true
+}

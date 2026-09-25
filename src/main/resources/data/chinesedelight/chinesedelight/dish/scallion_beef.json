@@ -1,0 +1,27 @@
+{
+  "priority": 28,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 4
+    },
+    "vegetable": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": [
+        "minecraft:beef",
+        "minecraft:cooked_beef"
+      ]
+    },
+    {
+      "items": "chinesedelight:bigscallion"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:scallion_beef",
+    "count": 1
+  }
+}

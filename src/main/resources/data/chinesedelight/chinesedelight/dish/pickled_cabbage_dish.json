@@ -1,0 +1,18 @@
+{
+  "priority": 18,
+  "station": "iron_pot",
+  "flavors": {
+    "sour": {
+      "min": 2
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:pickledcabbage"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:cold_kelp",
+    "count": 1
+  }
+}

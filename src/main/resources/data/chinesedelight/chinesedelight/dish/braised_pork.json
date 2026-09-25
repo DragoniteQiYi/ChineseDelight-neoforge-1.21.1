@@ -1,0 +1,30 @@
+{
+  "priority": 36,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 3
+    },
+    "sweet": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": [
+        "minecraft:porkchop",
+        "minecraft:cooked_porkchop"
+      ]
+    },
+    {
+      "items": "chinesedelight:soysauce"
+    },
+    {
+      "items": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:braised_pork",
+    "count": 1
+  }
+}

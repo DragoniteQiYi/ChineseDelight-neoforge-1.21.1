@@ -1,0 +1,27 @@
+{
+  "priority": 20,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 3
+    },
+    "vegetable": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": [
+        "minecraft:brown_mushroom",
+        "minecraft:red_mushroom"
+      ]
+    },
+    {
+      "items": "chinesedelight:tofu"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:mushroom_tofu",
+    "count": 1
+  }
+}

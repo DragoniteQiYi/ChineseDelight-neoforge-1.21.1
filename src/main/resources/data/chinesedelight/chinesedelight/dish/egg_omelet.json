@@ -1,0 +1,21 @@
+{
+  "priority": 12,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 1
+    },
+    "oily": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": "minecraft:egg"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:omelet",
+    "count": 1
+  }
+}

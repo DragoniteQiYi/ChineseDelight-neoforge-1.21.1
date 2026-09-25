@@ -1,0 +1,18 @@
+{
+  "priority": 20,
+  "station": "iron_pot",
+  "flavors": {
+    "vegetable": {
+      "min": 3
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:napacabbage"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:cabbage_stirfry",
+    "count": 1
+  }
+}

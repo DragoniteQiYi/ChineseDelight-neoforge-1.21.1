@@ -1,0 +1,18 @@
+{
+  "priority": 14,
+  "station": "iron_pot",
+  "flavors": {
+    "starchy": {
+      "min": 3
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:steamedbun"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:steamedbun",
+    "count": 1
+  }
+}

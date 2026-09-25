@@ -1,0 +1,27 @@
+{
+  "priority": 36,
+  "station": "iron_pot",
+  "flavors": {
+    "starchy": {
+      "min": 3
+    },
+    "umami": {
+      "min": 4
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:noodles"
+    },
+    {
+      "items": [
+        "minecraft:beef",
+        "minecraft:cooked_beef"
+      ]
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:beef_noodle_soup",
+    "count": 1
+  }
+}

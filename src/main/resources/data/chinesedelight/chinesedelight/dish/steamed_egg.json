@@ -1,0 +1,21 @@
+{
+  "priority": 22,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 2
+    }
+  },
+  "must_have": [
+    {
+      "items": "minecraft:egg"
+    },
+    {
+      "items": "chinesedelight:soysauce"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:steamed_egg",
+    "count": 1
+  }
+}

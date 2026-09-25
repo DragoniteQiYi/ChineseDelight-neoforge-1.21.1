@@ -1,0 +1,24 @@
+{
+  "priority": 26,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 2
+    },
+    "oily": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": "minecraft:egg"
+    },
+    {
+      "items": "chinesedelight:bigscallion"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:scallion_egg",
+    "count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "priority": 30,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 3
+    },
+    "spicy": {
+      "min": 1
+    },
+    "numbing": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": [
+        "minecraft:mutton",
+        "minecraft:cooked_mutton"
+      ]
+    },
+    {
+      "items": "chinesedelight:peppercorn"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:cumin_mutton",
+    "count": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "priority": 30,
+  "station": "iron_pot",
+  "flavors": {
+    "starchy": {
+      "min": 3
+    },
+    "umami": {
+      "min": 3
+    }
+  },
+  "must_have": [
+    {
+      "items": [
+        "chinesedelight:dough",
+        "chinesedelight:flour"
+      ]
+    },
+    {
+      "items": [
+        "minecraft:porkchop",
+        "minecraft:cooked_porkchop",
+        "chinesedelight:napacabbage",
+        "chinesedelight:garlicsprout"
+      ]
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:dumpling",
+    "count": 1
+  }
+}

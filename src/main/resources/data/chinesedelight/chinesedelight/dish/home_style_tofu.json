@@ -1,0 +1,24 @@
+{
+  "priority": 24,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 3
+    },
+    "salty": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:tofu"
+    },
+    {
+      "items": "chinesedelight:soysauce"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:home_style_tofu",
+    "count": 1
+  }
+}

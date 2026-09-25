@@ -1,0 +1,30 @@
+{
+  "priority": 36,
+  "station": "iron_pot",
+  "flavors": {
+    "sour": {
+      "min": 2
+    },
+    "spicy": {
+      "min": 1
+    },
+    "umami": {
+      "min": 2
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:vinegar"
+    },
+    {
+      "items": [
+        "chinesedelight:red_chilli",
+        "chinesedelight:chilipowder"
+      ]
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:hot_sour_soup",
+    "count": 1
+  }
+}

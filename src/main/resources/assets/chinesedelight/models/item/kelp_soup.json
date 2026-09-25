@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "chinesedelight:item/chili"
+    "layer0": "chinesedelight:item/kelp_soup"
   }
 }

@@ -1,0 +1,27 @@
+{
+  "priority": 12,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 2
+    }
+  },
+  "must_have": [
+    {
+      "items": [
+        "minecraft:beef",
+        "minecraft:cooked_beef",
+        "minecraft:porkchop",
+        "minecraft:cooked_porkchop",
+        "minecraft:chicken",
+        "minecraft:cooked_chicken",
+        "minecraft:mutton",
+        "minecraft:cooked_mutton"
+      ]
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:meat_stirfry",
+    "count": 1
+  }
+}

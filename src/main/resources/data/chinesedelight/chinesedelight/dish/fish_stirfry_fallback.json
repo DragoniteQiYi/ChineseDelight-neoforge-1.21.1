@@ -1,0 +1,14 @@
+{
+  "priority": 5,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 1
+    }
+  },
+  "result": {
+    "id": "chinesedelight:braised_fish",
+    "count": 1
+  },
+  "fallback": true
+}

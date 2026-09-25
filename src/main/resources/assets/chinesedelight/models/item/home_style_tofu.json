@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "chinesedelight:item/home_style_tofu"
+  }
+}

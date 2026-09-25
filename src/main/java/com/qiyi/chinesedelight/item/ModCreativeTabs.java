@@ -48,7 +48,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.YOGURT_BUCKET.get());
                         // 加工原料
                         output.accept(ModItems.CHILI_SEED.get());
-                        output.accept(ModItems.CHILI.get());
+                        output.accept(ModItems.RED_CHILLI.get());
                         output.accept(ModItems.CHILI_POWDER.get());
                         output.accept(ModItems.PEPPERCORN_SEED.get());
                         output.accept(ModItems.PEPPERCORN.get());

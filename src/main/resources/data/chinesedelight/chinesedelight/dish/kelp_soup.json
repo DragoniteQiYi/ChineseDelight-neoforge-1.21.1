@@ -1,0 +1,24 @@
+{
+  "priority": 20,
+  "station": "iron_pot",
+  "flavors": {
+    "salty": {
+      "min": 2
+    },
+    "umami": {
+      "min": 2
+    }
+  },
+  "must_have": [
+    {
+      "items": [
+        "minecraft:kelp",
+        "minecraft:dried_kelp"
+      ]
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:kelp_soup",
+    "count": 1
+  }
+}

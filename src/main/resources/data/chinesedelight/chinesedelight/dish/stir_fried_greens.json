@@ -1,0 +1,21 @@
+{
+  "priority": 18,
+  "station": "iron_pot",
+  "flavors": {
+    "vegetable": {
+      "min": 3
+    },
+    "oily": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:cookingoil"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:stir_fried_greens",
+    "count": 1
+  }
+}

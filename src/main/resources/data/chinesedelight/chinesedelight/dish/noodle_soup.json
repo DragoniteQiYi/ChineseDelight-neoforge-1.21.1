@@ -1,0 +1,18 @@
+{
+  "priority": 12,
+  "station": "iron_pot",
+  "flavors": {
+    "starchy": {
+      "min": 2
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:noodles"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:fried_noodles",
+    "count": 1
+  }
+}

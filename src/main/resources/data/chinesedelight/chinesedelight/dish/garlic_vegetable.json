@@ -1,0 +1,27 @@
+{
+  "priority": 22,
+  "station": "iron_pot",
+  "flavors": {
+    "vegetable": {
+      "min": 3
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:garlic"
+    },
+    {
+      "items": [
+        "chinesedelight:napacabbage",
+        "chinesedelight:garlicsprout",
+        "chinesedelight:garlicscape",
+        "minecraft:carrot",
+        "minecraft:beetroot"
+      ]
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:garlic_vegetable",
+    "count": 1
+  }
+}

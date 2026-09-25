@@ -1,0 +1,24 @@
+{
+  "priority": 34,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 3
+    },
+    "salty": {
+      "min": 1
+    }
+  },
+  "must_have": [
+    {
+      "items": "#chinesedelight:fish"
+    },
+    {
+      "items": "chinesedelight:soysauce"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:braised_fish",
+    "count": 1
+  }
+}

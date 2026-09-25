@@ -1,0 +1,24 @@
+{
+  "priority": 22,
+  "station": "iron_pot",
+  "flavors": {
+    "vegetable": {
+      "min": 2
+    },
+    "umami": {
+      "min": 2
+    }
+  },
+  "must_have": [
+    {
+      "items": "chinesedelight:napacabbage"
+    },
+    {
+      "items": "chinesedelight:tofu"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:cabbage_tofu_soup",
+    "count": 1
+  }
+}

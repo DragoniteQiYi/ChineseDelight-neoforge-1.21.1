@@ -1,0 +1,30 @@
+{
+  "priority": 32,
+  "station": "iron_pot",
+  "flavors": {
+    "umami": {
+      "min": 4
+    },
+    "starchy": {
+      "min": 2
+    }
+  },
+  "must_have": [
+    {
+      "items": [
+        "minecraft:beef",
+        "minecraft:cooked_beef"
+      ]
+    },
+    {
+      "items": [
+        "minecraft:potato",
+        "minecraft:baked_potato"
+      ]
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:beef_potato_stew",
+    "count": 1
+  }
+}

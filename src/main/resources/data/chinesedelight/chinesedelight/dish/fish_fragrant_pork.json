@@ -1,0 +1,33 @@
+{
+  "priority": 38,
+  "station": "iron_pot",
+  "flavors": {
+    "sour": {
+      "min": 1
+    },
+    "spicy": {
+      "min": 1
+    },
+    "sweet": {
+      "min": 1
+    },
+    "umami": {
+      "min": 3
+    }
+  },
+  "must_have": [
+    {
+      "items": [
+        "minecraft:porkchop",
+        "minecraft:cooked_porkchop"
+      ]
+    },
+    {
+      "items": "chinesedelight:pickledcabbage"
+    }
+  ],
+  "result": {
+    "id": "chinesedelight:fish_fragrant_pork",
+    "count": 1
+  }
+}
