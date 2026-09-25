@@ -4,19 +4,16 @@
   "flavors": {
     "spicy": {
       "min": 2,
-      "max": 5
+      "max": 8
     },
     "umami": {
       "min": 2
-    },
-    "numbing": {
-      "min": 1
     },
     "oily": {
       "min": 1
     },
     "sweet": {
-      "max": 1
+      "max": 2
     }
   },
   "must_have": [
